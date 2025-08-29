@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Typed from "react-typed";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
@@ -13,8 +13,8 @@ export default function Hero() {
       >
         <h1 className="text-4xl font-bold mb-4">Ayush Kumar</h1>
         <h2 className="text-4xl font-bold text-[#FFD700] mb-4">
-          <Typed
-            strings={[
+          <Typewriter
+            words={[
               "Full Stack Developer",
               "Coding Enthusiast",
               "MERN Stack Developer",
