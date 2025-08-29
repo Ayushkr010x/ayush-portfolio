@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <section id="about" className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-800 dark:bg-gray-800 text-white p-6">
+    <section id="about" className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-800 text-white p-6">
       <motion.div
         className="md:w-1/2 p-4"
         initial={{ x: -200, opacity: 0 }}
@@ -22,7 +22,9 @@ export default function Hero() {
             ]}
             typeSpeed={50}
             backSpeed={30}
-            loop
+            loop={0}
+            cursor
+            cursorStyle="|"
           />
         </h2>
         <p className="mb-4">
